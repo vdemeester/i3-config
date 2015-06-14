@@ -1,3 +1,7 @@
 *
 !.gitignore.d/
 !.gitignore.d/i3-config
+!.config
+!.config/mr
+!.config/mr/config.d
+!.config/mr/config.d/i3.vcsh
