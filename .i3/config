@@ -150,7 +150,6 @@ bindsym $mod+o mode "resize"
 bar {
     position bottom
     mode hide
-    output LVDS1
     # status_command i3status -c $HOME/.i3/i3status.conf
     status_command i3status
     colors {
