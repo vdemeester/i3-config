@@ -22,8 +22,8 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+b kill
 
 # start dmenu (a program launcher)
-bindsym $mod+j exec dmenu_run
-bindsym $mod+Shift+j exec --no-startup-id i3-dmenu-desktop
+bindsym $mod+j exec dmenu_run -fn Ubuntu\ Mono\ 8
+bindsym $mod+Shift+j exec --no-startup-id i3-dmenu-desktop -fn Ubuntu\ Mono\ 8
 
 # change focus
 bindsym $mod+t focus left
