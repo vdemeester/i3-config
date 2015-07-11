@@ -65,10 +65,10 @@ bindsym $mod+Right workspace next
 # set some visual stuff
 set $WS1 🌎
 set $WS2 🖃
-set $WS3 🐳
-set $WS4 🐸
-set $WS5 🔰
-set $WS6 🔰
+set $WS3 ꙮ
+set $WS4 🐳
+set $WS5 🐹
+set $WS6 🐸
 set $WS7 🔰
 set $WS8 🎧
 set $WS9 👥
