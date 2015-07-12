@@ -63,43 +63,49 @@ bindsym $mod+Left workspace prev
 bindsym $mod+Right workspace next
 
 # set some visual stuff
-set $WS1 🌎
-set $WS2 🖃
-set $WS3 ꙮ
-set $WS4 🐳
-set $WS5 🐹
-set $WS6 🐸
-set $WS7 🔰
-set $WS8 🎧
-set $WS9 👥
-set $WS0 🗪
+set $WS1 1 🌎
+set $WS2 2 🖃
+set $WS3 3 ꙮ
+set $WS4 4 🐳
+set $WS5 5 🐹
+set $WS6 6 🐸
+set $WS7 7 🔰
+set $WS8 8 🎧
+set $WS9 9 👥
+set $WS0 10 🗪
 # 🗍 🖳 🖧 🖃 🔰 🔮 📰 📐 📁 📂 💻 💡 💢 👷 👊
 # 🐳 🐸 🐹 🐺 🐽 🐮 🐾 🐿 🐧 🐥 🐣 🐠 🐘 🐙 🐟 🏭
 # 🏈 🎧 🍰 🍪 🍙 🌵 🌟 ⛺ ⚗ ♺
 
 # switch to workspace
-bindsym $mod+quotedbl workspace 1 $WS1
-bindsym $mod+less workspace 2 $WS2
-bindsym $mod+greater workspace 3 $WS3
-bindsym $mod+parenleft workspace 4 $WS4
-bindsym $mod+parenright workspace 5 $WS5
-bindsym $mod+at workspace 6 $WS6
-bindsym $mod+plus workspace 7 $WS7
-bindsym $mod+minus workspace 8 $WS8
-bindsym $mod+slash workspace 9 $WS9
-bindsym $mod+asterisk workspace 10 $WS0
+bindsym $mod+quotedbl workspace $WS1
+bindsym $mod+less workspace $WS2
+bindsym $mod+greater workspace $WS3
+bindsym $mod+parenleft workspace $WS4
+bindsym $mod+parenright workspace $WS5
+bindsym $mod+at workspace $WS6
+bindsym $mod+plus workspace $WS7
+bindsym $mod+minus workspace $WS8
+bindsym $mod+slash workspace $WS9
+bindsym $mod+asterisk workspace $WS0
 
 # move focused container to workspace
-bindsym $mod+Shift+quotedbl move container to workspace 1 $WS1
-bindsym $mod+Shift+less move container to workspace 2 $WS2
-bindsym $mod+Shift+greater move container to workspace 3 $WS3
-bindsym $mod+Shift+4 move container to workspace 4 $WS4
-bindsym $mod+Shift+5 move container to workspace 5 $WS5
-bindsym $mod+Shift+at move container to workspace 6 $WS6
-bindsym $mod+Shift+plus move container to workspace 7 $WS7
-bindsym $mod+Shift+minus move container to workspace 8 $WS8
-bindsym $mod+Shift+slash move container to workspace 9 $WS9
-bindsym $mod+Shift+asterisk move container to workspace 10 $WS0
+bindsym $mod+Shift+quotedbl move container to workspace $WS1
+bindsym $mod+Shift+less move container to workspace $WS2
+bindsym $mod+Shift+greater move container to workspace $WS3
+bindsym $mod+Shift+4 move container to workspace $WS4
+bindsym $mod+Shift+5 move container to workspace $WS5
+bindsym $mod+Shift+at move container to workspace $WS6
+bindsym $mod+Shift+plus move container to workspace $WS7
+bindsym $mod+Shift+minus move container to workspace $WS8
+bindsym $mod+Shift+slash move container to workspace $WS9
+bindsym $mod+Shift+asterisk move container to workspace $WS0
+
+# Assign
+assign [class="Firefox" window_role="browser"] → $WS1
+assign [class="*chrome*" window_role="browser"] → $WS1
+assign [class="Thunderbird"] → $WS2
+assign [class="scudcloud"] → $WS9
 
 # Other custom keybinding
 bindsym $mod+Shift+l exec screenlock
