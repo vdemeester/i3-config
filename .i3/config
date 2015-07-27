@@ -117,6 +117,10 @@ for_window [instance="metask"] floating enable;
 #for_window [instance="metask"] move scratchpad; [instance="metask"] scratchpad show; move position 0px 0px; resize shrink height 300px; resize grow width 683px; move scratchpad
 for_window [instance="metask"] move scratchpad; [instance="metask"] scratchpad show; move position 0px 0px; move scratchpad
 bindsym $mod+dollar [instance="metask"] scratchpad show
+bindsym XF86MonBrightnessUp exec "xbacklight -inc 10"
+bindsym XF86MonBrightnessDown exec "xbacklight -dec 10"
+bindsym shift+XF86MonBrightnessUp exec "xbacklight -inc 1"
+bindsym shift+XF86MonBrightnessDown exec "xbacklight -dec 1"
 
 # reload the configuration file
 bindsym $mod+Shift+x reload
