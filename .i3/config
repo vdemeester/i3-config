@@ -111,6 +111,11 @@ assign [class="scudcloud"] → $WS9
 bindsym $mod+Shift+l exec screenlock
 bindsym $mod+Shift+u exec sleep 1 && xset dpms force standby
 bindsym $mod+b border toggle
+## quick emacs <3
+exec --no-startup-id emacs --name scratche
+for_window [instance="scratche"] floating enable;
+for_window [instance="scratche"] move scratchpad; [instance="scratche"] scratchpad show; move position 0px 0px; move scratchpad
+bindsym $mod+Shift+dollar [instance="scratche"] scratchpad show
 ## quick terminal (tmux)
 exec --no-startup-id urxvt -name metask
 for_window [instance="metask"] floating enable;
