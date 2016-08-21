@@ -79,8 +79,8 @@ set $WS0 10 🗪
 
 # switch to workspace
 bindsym $mod+quotedbl workspace $WS1
-bindsym $mod+less workspace $WS2
-bindsym $mod+greater workspace $WS3
+bindsym $mod+guillemotleft workspace $WS2
+bindsym $mod+guillemotright workspace $WS3
 bindsym $mod+parenleft workspace $WS4
 bindsym $mod+parenright workspace $WS5
 bindsym $mod+at workspace $WS6
@@ -91,8 +91,8 @@ bindsym $mod+asterisk workspace $WS0
 
 # move focused container to workspace
 bindsym $mod+Shift+quotedbl move container to workspace $WS1
-bindsym $mod+Shift+less move container to workspace $WS2
-bindsym $mod+Shift+greater move container to workspace $WS3
+bindsym $mod+Shift+guillemotleft move container to workspace $WS2
+bindsym $mod+Shift+guillemotright move container to workspace $WS3
 bindsym $mod+Shift+4 move container to workspace $WS4
 bindsym $mod+Shift+5 move container to workspace $WS5
 bindsym $mod+Shift+at move container to workspace $WS6
