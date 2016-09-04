@@ -103,7 +103,6 @@ bindsym $mod+Shift+asterisk move container to workspace $WS0
 
 # Assign
 assign [class="Firefox" window_role="browser"] → $WS1
-assign [class="*chrome*" window_role="browser"] → $WS1
 assign [class="Thunderbird"] → $WS2
 assign [class="scudcloud"] → $WS9
 
