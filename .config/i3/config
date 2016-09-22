@@ -107,7 +107,7 @@ assign [class="Firefox" window_role="browser"] → $WS1
 assign [class="Thunderbird"] → $WS2
 
 # Other custom keybinding
-bindsym $mod+Shift+l exec screenlock
+bindsym $mod+Shift+l exec loginctl lock-session
 bindsym $mod+Shift+u exec sleep 1 && xset dpms force standby
 bindsym $mod+b border toggle
 ## quick emacs <3
