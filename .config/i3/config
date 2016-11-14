@@ -42,7 +42,8 @@ bindsym $mod+e fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+u layout stacking
-bindsym $mod+eacute layout tabbed
+# bindsym $mod+eacute layout tabbed
+bindcode $mod+17 layout tabbed
 bindsym $mod+p layout toggle split
 
 # toggle tiling / floating
@@ -87,7 +88,7 @@ bindcode $mod+15 workspace $WS6
 bindcode $mod+16 workspace $WS7
 bindcode $mod+17 workspace $WS8
 bindcode $mod+18 workspace $WS9
-bindcode $mod+19 workspace $WS10
+bindcode $mod+19 workspace $WS0
 
 # move focused container to workspace
 bindcode $mod+Shift+10 move container to workspace $WS1
@@ -99,7 +100,7 @@ bindcode $mod+Shift+15 move container to workspace $WS6
 bindcode $mod+Shift+16 move container to workspace $WS7
 bindcode $mod+Shift+17 move container to workspace $WS8
 bindcode $mod+Shift+18 move container to workspace $WS9
-bindcode $mod+Shift+19 move container to workspace $WS10
+bindcode $mod+Shift+19 move container to workspace $WS0
 
 # Assign
 assign [class="Firefox" window_role="browser"] → $WS1
