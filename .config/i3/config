@@ -15,7 +15,7 @@ bindsym $mod+Return exec termite
 bindsym $mod+Shift+b kill
 
 # start dmenu (a program launcher)
-bindsym $mod+j exec dmenu_run -z -fn Ubuntu\ Mono\ 8 -z -o 0.9 -dim 0.1 -l 3 -dc yellow -p "λ"
+bindsym $mod+j exec dmenu_run -z -fn Ubuntu\ Mono\ 8 -l 3 -p "λ"
 bindsym $mod+Shift+j exec i3-dmenu-desktop
 
 # change focus
