@@ -64,16 +64,16 @@ bindsym $mod+Left workspace prev
 bindsym $mod+Right workspace next
 
 # set some visual stuff
-set $WS1 1 🌎
-set $WS2 2 🖃
-set $WS3 3 ꙮ
-set $WS4 4 🐳
-set $WS5 5 🐹
-set $WS6 6 🐸
-set $WS7 7 🔰
-set $WS8 8 🎧
-set $WS9 9 👥
 set $WS0 0 🗪
+set $WS1 1 🌎
+set $WS2 2 ꙮ
+set $WS3 3 🐳
+set $WS4 4 🐹
+set $WS5 5 🐸
+set $WS6 6 👷
+set $WS7 7 🐧
+set $WS8 8 🎧
+set $WS9 9 🖃
 # 🗍 🖳 🖧 🖃 🔰 🔮 📰 📐 📁 📂 💻 💡 💢 👷 👊
 # 🐳 🐸 🐹 🐺 🐽 🐮 🐾 🐿 🐧 🐥 🐣 🐠 🐘 🐙 🐟 🏭
 # 🏈 🎧 🍰 🍪 🍙 🌵 🌟 ⛺ ⚗ ♺
