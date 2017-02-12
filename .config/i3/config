@@ -104,7 +104,7 @@ bindcode $mod+Shift+19 move container to workspace $WS0
 
 # Assign
 assign [class="Firefox" window_role="browser"] → $WS1
-assign [class="Thunderbird"] → $WS2
+assign [class="Thunderbird"] → $WS9
 
 # Other custom keybinding
 bindsym $mod+Shift+l exec loginctl lock-session
