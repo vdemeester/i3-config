@@ -15,7 +15,7 @@ bindsym $mod+Return exec termite
 bindsym $mod+Shift+b kill
 
 # start dmenu (a program launcher)
-bindsym $mod+j exec rofi -show run -modi "run,window" -location 2 -hide-scrollbar -separator-style solid -font Ubuntu\ Mono\ 8
+bindsym $mod+j exec "rofi -show run -modi 'run,window' -location 2 -hide-scrollbar -separator-style solid -font Ubuntu\ Mono\ 8"
 # bindsym $mod+Shift+j exec i3-dmenu-desktop
 
 # change focus
