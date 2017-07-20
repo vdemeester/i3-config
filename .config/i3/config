@@ -130,6 +130,9 @@ bindsym XF86AudioRaiseVolume exec "pactl set-sink-mute @DEFAULT_SINK@ false ; pa
 bindsym XF86AudioMute exec "pactl set-sink-mute @DEFAULT_SINK@ toggle"
 bindsym XF86AudioMicMute exec "pactl set-source-mute @DEFAULT_SOURCE@ toggle"
 
+# change screen layout with *randr
+bindsym $mod+Shift+F11 exec "autorandr -c"
+
 # reload the configuration file
 bindsym $mod+Shift+x reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
