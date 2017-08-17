@@ -174,7 +174,7 @@ mode "$mode_launcher" {
     bindsym s exec slack
     bindsym p exec spotify
 
-    bindsym Esc mode "default"
+    bindsym Escape mode "default"
     bindsym Return mode "default"
 }
 
