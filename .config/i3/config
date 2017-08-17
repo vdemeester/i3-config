@@ -31,10 +31,10 @@ bindsym $mod+Shift+r move up
 bindsym $mod+Shift+n move right
 
 # move focused workspace
-bindsym $mod+Shift+left move workspace to left
-bindsym $mod+Shift+down move workspace to down
-bindsym $mod+Shift+up move workspace to up
-bindsym $mod+Shift+right move workspace to right
+bindsym $mod+Control+left move workspace to left
+bindsym $mod+Control+down move workspace to down
+bindsym $mod+Control+up move workspace to up
+bindsym $mod+Control+right move workspace to right
 
 # split in horizontal orientation
 bindsym $mod+c split h
@@ -65,8 +65,12 @@ bindsym $mod+a focus parent
 
 
 # alternatively, you can use the cursor keys:
-bindsym $mod+Left workspace prev
-bindsym $mod+Right workspace next
+bindsym $mod+Left workspace prev_on_output
+bindsym $mod+Right workspace next_on_output
+bindsym $mod+Shift+Left focus output left
+bindsym $mod+Shift+Right focus output right
+bindsym $mod+Shift+Up focus output up
+bindsym $mod+Shift+Down focus output down
 
 # set some visual stuff
 set $WS0 0 🗪
