@@ -154,6 +154,11 @@ new_float normal
 hide_edge_borders both
 focus_follows_mouse no
 
+# Workspace back and forth (with/without active container)
+workspace_auto_back_and_forth yes
+bindsym $mod+v workspace back_and_forth
+bindsym $mod+Shift+v move container to workspace back_and_forth; workspace back_and_forth
+
 for_window [class="urxvt"] border 1pixel
 
 # resize window (you can also use the mouse for that)
