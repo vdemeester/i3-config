@@ -161,6 +161,22 @@ bindsym $mod+Shift+v move container to workspace back_and_forth; workspace back_
 
 for_window [class="urxvt"] border 1pixel
 
+set $mode_launcher Launch: [c]hrome [e]macs [f]irefox [s]lack s[p]otify
+bindsym $mod+o mode "$mode_launcher"
+
+mode "$mode_launcher" {
+    bindsym c exec google-chrome-stable
+    bindsym e exec emacsclient -c
+    bindsym f exec firefox
+    bindsym s exec slack
+    bindsym p exec spotify
+
+    bindsym Esc mode "default"
+    bindsym Return mode "default"
+}
+
+bindsym $mod+l mode "$mode_launcher"
+
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
