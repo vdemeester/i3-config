@@ -30,12 +30,6 @@ bindsym $mod+Shift+s move down
 bindsym $mod+Shift+r move up
 bindsym $mod+Shift+n move right
 
-# move focused workspace
-bindsym $mod+Control+left move workspace to output left
-bindsym $mod+Control+down move workspace to output down
-bindsym $mod+Control+up move workspace to output up
-bindsym $mod+Control+right move workspace to output right
-
 # split in horizontal orientation
 bindsym $mod+c split h
 
@@ -165,11 +159,31 @@ bindsym $mod+Shift+v move container to workspace back_and_forth; workspace back_
 
 for_window [class="urxvt"] border 1pixel
 
+# move workspace to output
+set $workspace_move Move workspace to output : [l]eft [r]ight [d]own [u]p
+
+mode "$workspace_move" {
+     bindsym left move workspace to output left
+     bindsym l move workspace to output left
+
+     bindsym right move workspace to output right
+     bindsym r move workspace to output right
+
+     bindsym down move workspace to output down
+     bindsym d move workspace to output down
+
+     bindsym up move workspace to output up
+     bindsym u move workspace to output up
+}
+
+bindsym $mod+m mode "$workspace_move"
+
+# launcher
 set $mode_launcher Launch: [c]hrome [e]macs [f]irefox [s]lack s[p]otify
 
 mode "$mode_launcher" {
     bindsym c exec google-chrome-stable
-    bindsym e exec emacsclient -c
+    bindsym e exec emacsclient -c # ; mode default
     bindsym f exec firefox
     bindsym s exec slack
     bindsym p exec spotify
